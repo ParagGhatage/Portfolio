@@ -20,7 +20,7 @@ export const Footer = () => {
 
        <div className="flex-auto">
         <div>
-        <a href="">X</a>
+        <a href="https://x.com/PARAG_GHATAGE">X</a>
         </div>
 
         <div>
@@ -28,12 +28,17 @@ export const Footer = () => {
         </div>
 
         <div>
-        <a href="">Showcase</a>
+        <a href="https://www.showwcase.com/phghatage1237">Showcase</a>
         </div>
 
         <div>
-        <a href="">Instagram</a>
+        <a href="https://www.instagram.com/parag_ghatage_35/">Instagram</a>
         </div>
+
+        <div>
+        <a href="https://github.com/ParagGhatage">Github</a>
+        </div>
+
         </div>
     </div>
     <div className="footer-section w-full md:w-1/3 px-4">
