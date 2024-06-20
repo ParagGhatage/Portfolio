@@ -6,11 +6,17 @@ import Image from "next/image";
 
 export function CardGradient() {
   return (
-    <div>
+    <div className="flex justify-around">
         <a href="https://thunder-tube.vercel.app/">
       <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
         
-        
+      <Image
+          src={`https://images.pexels.com/photos/2823936/pexels-photo-2823936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2`}
+          alt="Thunder-Tube"
+          height="700"
+          width="400"
+          className="object-contain"
+        />
     
         <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
           Thunder-Tube
@@ -29,10 +35,11 @@ export function CardGradient() {
         <a href="https://github.com/ParagGhatage/Thunder-Tube">Source Code</a>
         
         </div>
-          
+        
         
       </BackgroundGradient>
       </a>
+      
     </div>
   );
 }

@@ -2,10 +2,11 @@
 
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
+import Image from "next/image";
 
 export function AnimatedPin() {
   return (
-    <div className="h-[30rem] w-full flex items-center justify-center mt-0">
+    <div className="h-[30rem] w-full flex items-center justify-center mt-0 border-spacing-2 border-white ">
       <PinContainer
         title="https://thunder-tube.vercel.app/"
         href="https://thunder-tube.vercel.app/"
@@ -20,6 +21,13 @@ export function AnimatedPin() {
             </span>
           </div>
           <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+          <Image
+          src={`https://images.pexels.com/photos/2823936/pexels-photo-2823936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2`}
+          alt="Thunder-Tube"
+          height="1000"
+          width="400"
+          className="object-contain"
+        />
         </div>
       </PinContainer>
     </div>
