@@ -11,12 +11,34 @@ import {
   IconBrandInstagram,
   IconBrandLinkedin
 } from "@tabler/icons-react";
+import axios from "axios"
+import toast from "react-hot-toast";
 
 export function ContactMe() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted");
   };
+
+  const [user, setUser] = React.useState({
+    email: "",
+    message: "",
+    name: "",
+})
+    const onEmail = async () => {
+      try {
+
+          const response = await axios.post("/api/Contact-me", user);
+          console.log( response.data);
+
+          
+          
+      } catch (error:any) {
+          console.log("Signup failed", error.message);
+          
+      }
+    }
+
   return (
     <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input overflow-auto bg-white dark:bg-black">
       <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200 pt-3">
@@ -30,24 +52,31 @@ export function ContactMe() {
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="name">Your Name</Label>
-            <Input id="name" placeholder="Your Name" type="text" />
+            <Input id="name" placeholder="Your Name" type="text"
+            value={user.name} 
+            onChange={(e) => setUser({...user, name: e.target.value})}/>
           </LabelInputContainer>
           
         </div>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="Email id" type="email" />
+          <Input id="email" placeholder="Email id" type="email"
+          value={user.email} 
+          onChange={(e) => setUser({...user, email: e.target.value})}/>
         </LabelInputContainer>
 
         <LabelInputContainer className="h-56">
             <Label htmlFor="message">Message</Label>
-            <Input id="message" placeholder="Your message..." type="text" className="h-40 md:max-w-xl px-4 py-2 whitespace-normal break-words resize-y"/>
+            <Input id="message" placeholder="Your message..." type="text" className="h-40 md:max-w-xl px-4 py-2 whitespace-normal break-words resize-y"
+            value={user.message}
+            onChange={(e) => setUser({...user, message: e.target.value})}/>
           </LabelInputContainer>
 
 
         <button
           className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
+          onClick={onEmail}
         >
           Send Email &rarr;
           <BottomGradient />
