@@ -68,7 +68,7 @@ export function CardGradient() {
   <a href="https://thunder-tube.vercel.app/" className="mb-4 sm:mb-0">
     <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
       <Image
-        src="https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=600"
+        src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         alt="Connectify"
         height="700"
         width="400"

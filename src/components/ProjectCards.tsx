@@ -48,7 +48,7 @@ export function AnimatedPin() {
       </div>
       <div className="flex-1 w-full rounded-lg bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500 mb-4"></div>
       <Image
-        src="https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=600"
+        src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         alt="Connectify"
         height="1000"
         width="400"
