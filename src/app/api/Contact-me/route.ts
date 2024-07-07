@@ -1,34 +1,30 @@
-import { ConnectDB } from '@/dbConfig/dbConfig'
-import User from '@/models/emailModel'
-import { NextRequest,NextResponse} from 'next/server'
+import { EmailTemplate } from '@/components/Resend/email-template';
+import { Resend } from 'resend';
+import { NextRequest,NextResponse } from 'next/server';
 
-ConnectDB()
+const resend = new Resend("re_iEe14MHZ_9i5yP1ycxfuzXYta1TbwUy2s");
 
-export async function POST(request:NextRequest) {
-    try {
-        const reqbody = await request.json()
+export async function POST(req:any) {
+  try {
+
+    const reqbody = await req.json()
         console.log(reqbody)
-        const {name, email,message} = reqbody
+        const {name,email,message} = reqbody
 
+    const { data, error } = await resend.emails.send({
+      from: 'Parag <onboarding@paragghatage.com>',
+      to: ['phghatage1@gmail.com'],
+      subject: 'Contact Me',
+      react: EmailTemplate({name:name,email:email,message:message}),
+      text:"nothing"
+    });
 
-        const newUser = new User({
-            name,
-            email,
-            message
-        })
-
-        const savedUser = await newUser.save()
-        console.log(savedUser);
-
-        return NextResponse.json({
-            message: "Email sent",
-            success: true,
-            savedUser
-        })
-
-    } catch (error:any) {
-        return NextResponse.json({error: error.message},
-            {status:500}
-        )
+    if (error) {
+      return Response.json({ error }, { status: 500 });
     }
+
+    return Response.json(data);
+  } catch (error) {
+    return Response.json({ error }, { status: 500 });
+  }
 }
