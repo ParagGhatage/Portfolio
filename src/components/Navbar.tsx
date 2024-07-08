@@ -23,8 +23,11 @@ export function Navbar({ className }: { className?: string }) {
         
         <Link href={"/projects"}>
         <MenuItem setActive={setActive} active={active} item="Projects">
-          <div className="flex flex-col space-y-4 text-sm">
+          <div className="flex flex-col space-y-4 text-sm p-4">
             <HoveredLink href="https://thunder-tube.vercel.app/">Thunder-Tube</HoveredLink>
+          </div>
+          <div className="flex flex-col space-y-4 text-sm p-4">
+            <HoveredLink href="https://voyagevista-beige.vercel.app/">Voyage Vista</HoveredLink>
           </div>
         </MenuItem>
         </Link>

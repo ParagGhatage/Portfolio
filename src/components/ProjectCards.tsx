@@ -33,23 +33,23 @@ export function AnimatedPin() {
   </PinContainer>
 
   <PinContainer
-    title="https://thunder-tube.vercel.app/"
-    href="https://thunder-tube.vercel.app/"
+    title="https://voyagevista-beige.vercel.app/"
+    href="https://voyagevista-beige.vercel.app/"
     className="mb-4 sm:mb-0 sm:ml-4"
   >
     <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-full sm:w-[20rem] h-auto sm:h-[20rem]">
       <h3 className="font-bold text-base text-slate-100 mb-2">
-        Connectify
+        VoyageVista
       </h3>
       <div className="text-base font-normal mb-4">
         <span className="text-slate-500">
-          Brings all social media apps at one place.
+        VoyageVista is an innovative web application designed to help users discover and plan their perfect trips.
         </span>
       </div>
       <div className="flex-1 w-full rounded-lg bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500 mb-4"></div>
       <Image
-        src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        alt="Connectify"
+        src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="VoyageVista"
         height="1000"
         width="400"
         className="object-contain w-full"
