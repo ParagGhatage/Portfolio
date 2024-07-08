@@ -78,7 +78,7 @@ export function CardGradient() {
         VoyageVista
       </p>
       <p className="text-sm text-neutral-600 dark:text-neutral-400">
-      VoyageVista is an innovative web application designed to help users discover and plan their perfect trips. Whether you're an avid traveler or someone looking to explore new destinations, our platform offers comprehensive tools and features to enhance your travel planning experience.
+      VoyageVista is an innovative web application designed to help users discover and plan their perfect trips. Whether you&apos;re an avid traveler or someone looking to explore new destinations, our platform offers comprehensive tools and features to enhance your travel planning experience.
       </p>
       <div className="p-2 sm:p-5 w-32 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
         <a href="https://github.com/ParagGhatage/VoyageVista">Source Code</a>
