@@ -24,7 +24,7 @@ export const Footer = () => {
         </div>
 
         <div>
-        <a href="">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/parag-ghatage-09685a314/">LinkedIn</a>
         </div>
 
         <div>
@@ -41,13 +41,7 @@ export const Footer = () => {
 
         </div>
     </div>
-    <div className="footer-section w-full md:w-1/3 px-4">
-       Contact Me:
-
-       <div>
-        Email: phghatage1@gmail.com
-       </div>
-    </div>
+    
   </div>
 </footer>
     )
