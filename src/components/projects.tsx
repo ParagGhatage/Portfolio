@@ -31,8 +31,8 @@ export function ProjectText() {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center h-[30rem]  ">
-      <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">
+    <div className="flex flex-col items-center justify-center h-[30rem]  mt-24 sm:mt-0 ">
+      <p className="text-neutral-600 dark:text-neutral-200 text-sm sm:text-base  ">
         Software changes how the world functions.
       </p>
       <TypewriterEffectSmooth  words={words} />
@@ -40,7 +40,7 @@ export function ProjectText() {
         
       </div>
         <Link href={"/projects"}>
-        <button  className=" bg-green-400 hover:bg-blue-500 p-5 rounded-sm text-emerald-50 text-2xl ">
+        <button  className=" bg-white hover:bg-blue-500 p-5 rounded-lg text-black text-2xl ">
         Projects
         </button>
         </Link>
