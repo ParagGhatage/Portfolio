@@ -49,15 +49,16 @@ export function ContactMe() {
     }
 
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input overflow-auto bg-white dark:bg-black">
-      <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200 pt-3">
-        Nice to meet you
+    <div className=" w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input overflow-auto bg-white dark:bg-black">
+      <h2 className="font-bold text-4xl text-neutral-800 dark:text-neutral-200 pt-3 text-center">
+        Get in touch
+      
       </h2>
-      <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-        Send me an email right from here
-      </p>
+      
 
-      <form className="my-8" onSubmit={onEmail}>
+      <form className="my-8 sm:flex justify-center" onSubmit={onEmail}>
+        
+        <div className="w-80">
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="name">Your Name</Label>
@@ -90,13 +91,14 @@ export function ContactMe() {
           Send &rarr;
           <BottomGradient />
         </button>
-
+        </div>
+        <div className="m-7 mt-0 w-60  sm:ml-20 ">
         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
+        
+        <div className="flex flex-col space-y-4">
         <div className="text-center m-4 text-2xl ">
             Socials
         </div>
-        <div className="flex flex-col space-y-4">
-
         <Link href={"https://mail.google.com/mail/u/1/#inbox?compose=DmwnWrRtsnWMdWLblVbzKmbktPSRRGRTPvPMCVZfFwtCQBkHfMzjdtRdMglGlGBlKjbqnGxffthv"}>
           <div
             className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
@@ -109,7 +111,7 @@ export function ContactMe() {
           </div>
           </Link>
 
-        <a href="https://github.com/ParagGhatage">
+        <Link href="https://github.com/ParagGhatage">
           <div
             className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
           > 
@@ -119,9 +121,9 @@ export function ContactMe() {
             </span>
             <BottomGradient />
           </div>
-          </a>
+          </Link>
 
-          <a href="https://x.com/PARAG_GHATAGE">
+          <Link href="https://x.com/PARAG_GHATAGE">
           <div
             className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
           > 
@@ -131,9 +133,9 @@ export function ContactMe() {
             </span>
             <BottomGradient />
           </div>
-          </a>
+          </Link>
 
-          <a href="https://www.instagram.com/parag_ghatage_35/">
+          <Link href="https://www.instagram.com/parag_ghatage_35/">
           <div
             className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
           > 
@@ -143,9 +145,9 @@ export function ContactMe() {
             </span>
             <BottomGradient />
           </div>
-          </a>
+          </Link>
 
-          <a href="https://www.linkedin.com/in/parag-ghatage-7601b825a/">
+          <Link href="https://www.linkedin.com/in/parag-ghatage-7601b825a/">
           <div
             className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
           > 
@@ -155,7 +157,9 @@ export function ContactMe() {
             </span>
             <BottomGradient />
           </div>
-          </a>
+          </Link>
+        </div>
+        
 
 
         </div>
