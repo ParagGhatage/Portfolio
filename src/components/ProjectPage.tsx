@@ -9,7 +9,7 @@ import Link from "next/link";
 export function Sparkles() {
   return (
     <div className="h-[10rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md mt-20">
-      <h1 className="text-2xl md:text-3xl lg:text-7xl font-bold text-center text-white relative z-20">
+      <h1 className="text-4xl md:text-5xl lg:text-9xl font-bold text-center text-white relative z-20">
         Projects
       </h1>
       <div className="w-full md:w-[40rem] h-40 relative">
