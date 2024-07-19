@@ -4,6 +4,7 @@ import { BackgroundGradient } from "./ui/background-gradient";
 import { IconAppWindow } from "@tabler/icons-react";
 import Image from "next/image";
 import { SparklesCore } from "./ui/sparkles";
+import Link from "next/link";
 
 export function Sparkles() {
   return (
@@ -41,14 +42,14 @@ export function Sparkles() {
 export function CardGradient() {
   return (
     <div className="flex flex-col sm:flex-row justify-around items-center sm:items-start">
-  <a href="https://thunder-tube.vercel.app/" className="mb-4 sm:mb-0">
+  <Link href="https://thunder-tube.vercel.app/" className="mb-4 sm:mb-0">
     <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
       <Image
         src="https://images.pexels.com/photos/2823936/pexels-photo-2823936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         alt="Thunder-Tube"
         height="700"
         width="400"
-        className="object-contain"
+        className=""
       />
       <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
         Thunder-Tube
@@ -60,12 +61,12 @@ export function CardGradient() {
         Express and NodeJS for backend.
       </p>
       <div className="p-2 sm:p-5 w-32 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
-        <a href="https://github.com/ParagGhatage/Thunder-Tube">Source Code</a>
+        <Link href="https://github.com/ParagGhatage/Thunder-Tube">Source Code</Link>
       </div>
     </BackgroundGradient>
-  </a>
+  </Link>
 
-  <a href="https://voyagevista-beige.vercel.app/" className="mb-4 sm:mb-0">
+  <Link href="https://voyagevista-beige.vercel.app/" className="mb-4 sm:mb-0">
     <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
       <Image
         src="https://images.pexels.com/photos/2178175/pexels-photo-2178175.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -81,10 +82,10 @@ export function CardGradient() {
       VoyageVista is an innovative web application designed to help users discover and plan their perfect trips. Whether you&apos;re an avid traveler or someone looking to explore new destinations, our platform offers comprehensive tools and features to enhance your travel planning experience.
       </p>
       <div className="p-2 sm:p-5 w-32 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
-        <a href="https://github.com/ParagGhatage/VoyageVista">Source Code</a>
+        <Link href="https://github.com/ParagGhatage/VoyageVista">Source Code</Link>
       </div>
     </BackgroundGradient>
-  </a>
+  </Link>
 </div>
 
   );
