@@ -77,7 +77,7 @@ export function ContactMe() {
 
         <LabelInputContainer className="h-56">
             <Label htmlFor="message">Message</Label>
-            <Input id="message" placeholder="Your message..." type="text" className="h-40 md:max-w-xl px-4 py-2 whitespace-normal break-words resize-y"
+            <textarea id="message" placeholder="Your message..."  className="h-40 md:max-w-xl px-4 py-2 whitespace-normal break-words resize-y"
             value={user.message}
             onChange={(e) => setUser({...user, message: e.target.value})}/>
           </LabelInputContainer>
