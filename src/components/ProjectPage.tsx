@@ -40,36 +40,7 @@ export function Sparkles() {
 export function CardGradient() {
   return (
     <div className="flex flex-col  sm:flex-row justify-around items-center sm:items-start ">
-      <Link href="https://thunder-tube.vercel.app/" className="sm:mb-0">
-        <BackgroundGradient className="rounded-[22px] max-w-sm w-full sm:w-auto flex flex-col justify-between p-4 sm:p-10 bg-white dark:bg-zinc-900">
-          <div className="p-4">
-            click to explore &rarr;
-          </div>
-          <div className="flex flex-col ">
-            <Image
-              src="https://images.pexels.com/photos/2823936/pexels-photo-2823936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Thunder-Tube"
-              height="700"
-              width="400"
-              className=""
-            />
-            <div className="sm:mb-20">
-              <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
-                Thunder-Tube
-              </p>
-              <p className="text-sm text-neutral-600  dark:text-neutral-400 ">
-                Full stack YouTube clone with all its features. It uses ReactJS as a
-                frontend framework, MongoDB as a database, and Express and NodeJS for
-                backend.
-              </p>
-            </div>
-          </div>
-          <div className="p-5 sm:p-5 w-38 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xl font-bold dark:bg-zinc-800">
-            <Link href="https://github.com/ParagGhatage/Thunder-Tube">Source Code</Link>
-          </div>
-        </BackgroundGradient>
-      </Link>
-
+      
       <Link href="https://voyagevista-beige.vercel.app/" className="sm:mb-0">
         <BackgroundGradient className="rounded-[22px] max-w-sm w-full sm:w-auto flex flex-col  p-4 sm:p-10 bg-white dark:bg-zinc-900">
         <div className="p-4">
@@ -101,6 +72,37 @@ export function CardGradient() {
           </div>
         </BackgroundGradient>
       </Link>
+
+      <Link href="https://thunder-tube.vercel.app/" className="sm:mb-0">
+        <BackgroundGradient className="rounded-[22px] max-w-sm w-full sm:w-auto flex flex-col justify-between p-4 sm:p-10 bg-white dark:bg-zinc-900">
+          <div className="p-4">
+            click to explore &rarr;
+          </div>
+          <div className="flex flex-col ">
+            <Image
+              src="https://images.pexels.com/photos/2823936/pexels-photo-2823936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Thunder-Tube"
+              height="700"
+              width="400"
+              className=""
+            />
+            <div className="sm:mb-20">
+              <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
+                Thunder-Tube
+              </p>
+              <p className="text-sm text-neutral-600  dark:text-neutral-400 ">
+                Full stack YouTube clone with all its features. It uses ReactJS as a
+                frontend framework, MongoDB as a database, and Express and NodeJS for
+                backend.
+              </p>
+            </div>
+          </div>
+          <div className="p-5 sm:p-5 w-38 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xl font-bold dark:bg-zinc-800">
+            <Link href="https://github.com/ParagGhatage/Thunder-Tube">Source Code</Link>
+          </div>
+        </BackgroundGradient>
+      </Link>
+
     </div>
   );
 }
