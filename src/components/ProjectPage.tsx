@@ -41,7 +41,7 @@ export function CardGradient() {
   return (
     <div className="flex flex-col  sm:flex-row justify-around items-center sm:items-start ">
       
-      <Link href="https://voyagevista-beige.vercel.app/" className="sm:mb-0">
+      <Link href="https://www.explora.cyou" className="sm:mb-0">
         <BackgroundGradient className="rounded-[22px] max-w-sm w-full sm:w-auto flex flex-col  p-4 sm:p-10 bg-white dark:bg-zinc-900">
         <div className="p-4">
             click to explore &rarr;
