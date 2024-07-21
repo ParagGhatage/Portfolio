@@ -33,17 +33,17 @@ export function AnimatedPin() {
   </PinContainer>
 
   <PinContainer
-    title="https://voyagevista-beige.vercel.app/"
-    href="https://voyagevista-beige.vercel.app/"
+    title="https://www.explora.cyou"
+    href="https://www.explora.cyou"
     className="mb-4 sm:mb-0 sm:ml-4"
   >
     <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-full sm:w-[20rem] h-auto sm:h-[20rem]">
       <h3 className="font-bold text-base text-slate-100 mb-2">
-        VoyageVista
+        Explora
       </h3>
       <div className="text-base font-normal mb-4">
         <span className="text-slate-500">
-        VoyageVista is an innovative web application designed to help users discover and plan their perfect trips.
+        Explora is an innovative web application designed to help users discover and plan their perfect trips.
         </span>
       </div>
       <div className="flex-1 w-full rounded-lg bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500 mb-4"></div>
