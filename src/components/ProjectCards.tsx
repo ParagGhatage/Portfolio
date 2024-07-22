@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function AnimatedPin() {
   return (
-    <div className="flex flex-col sm:flex-row  items-center sm:justify-center  mt-0 border-spacing-2 border-white w-screen h-auto sm:h-[30rem]">
+    <div className="flex flex-col sm:flex-row mb-28 items-center sm:justify-center  mt-0 border-spacing-2 border-white w-screen h-auto sm:h-[30rem]">
   <PinContainer
     title="https://www.explora.cyou"
     href="https://www.explora.cyou"

@@ -14,8 +14,11 @@ const slugs = [
   "amazonaws",
   "firebase",
   "vercel",
-  "testinglibrary",
+  "resend",
   "docker",
+  "tailwindcss",
+  "mongodb",
+  "shadcn",
   "git",
   "github",
   "gitlab",
@@ -26,8 +29,8 @@ const slugs = [
 
 export function IconCloud1() {
   return (
-    <div className=" h-full w-full items-center pt-25 mt-35 justify-center  rounded-lg  bg-background  ">
-        <div className="text-center text-4xl font-bold">
+    <div className=" h-full w-full items-center pt-25 mt-35 justify-center  rounded-lg  bg-black  ">
+        <div className="text-center text-4xl font-bold text-white">
            Skills
         </div>
       <IconCloud iconSlugs={slugs} />
