@@ -38,14 +38,18 @@ export function ContactMe() {
               title: 'Email Sent.',
               description: "We have sent an email to Parag.",
               status: 'success',
-              duration: 9000,
               isClosable: true,
             })
           }
           
       } catch (error:any) {
           console.log("Enable to send email", error.message);
-          
+          toast({
+            title: 'Enable to send email.',
+            description: "Please try again.",
+            status: 'error',
+            isClosable: true,
+          })  
       }
     }
 
