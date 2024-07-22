@@ -3,6 +3,7 @@
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import React from "react";
 import Link from "next/link";
+import { CoolMode } from "@/components/magicui/cool-mode";
 
 
 export function ProjectText() {
@@ -46,9 +47,11 @@ export function ProjectText() {
         
       </div>
         <Link href={"/projects"}>
+        <CoolMode>
         <button  className=" bg-white  p-5 rounded-2xl text-black text-2xl ">
         Projects
         </button>
+        </CoolMode>
         </Link>
       
     </div>
