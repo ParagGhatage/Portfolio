@@ -25,14 +25,15 @@ export function ContactMe() {
 })
  
 
-    const onEmail = async () => {
+    const onEmail = async (e:any) => {
+      e.preventDefault()
       try {
 
           const response = await axios.post("/api/Contact-me", user);
           console.log( response.data);
 
           
-          if(response.data){
+          if(response){
             toast({
               title: 'Email Sent.',
               description: "We have sent an email to Parag.",
