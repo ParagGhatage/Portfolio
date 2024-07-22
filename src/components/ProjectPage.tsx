@@ -68,7 +68,7 @@ export function CardGradient() {
             </div>
           </div>
           <div className="p-5 sm:p-5 w-38 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xl font-bold dark:bg-zinc-800">
-            <Link href="https://github.com/ParagGhatage/VoyageVista">Source Code</Link>
+            <Link href="https://github.com/ParagGhatage/Explora">Source Code</Link>
           </div>
         </BackgroundGradient>
       </Link>

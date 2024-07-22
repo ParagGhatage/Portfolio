@@ -27,7 +27,7 @@ export function Navbar({ className }: { className?: string }) {
             <HoveredLink href="https://thunder-tube.vercel.app/">Thunder-Tube</HoveredLink>
           </div>
           <div className="flex flex-col space-y-4 text-sm p-4">
-            <HoveredLink href="https://voyagevista-beige.vercel.app/">Explora</HoveredLink>
+            <HoveredLink href="https://www.explora.cyou">Explora</HoveredLink>
           </div>
         </MenuItem>
         </Link>
