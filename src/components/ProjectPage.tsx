@@ -42,22 +42,23 @@ export function CardGradient() {
     <div className="flex flex-col  sm:flex-row justify-around items-center sm:items-start ">
       
       <Link href="https://www.explora.cyou" className="sm:mb-0">
-        <BackgroundGradient className="rounded-[22px] max-w-sm w-full sm:w-auto flex flex-col  p-4 sm:p-10 bg-white dark:bg-zinc-900">
-        <div className="p-4">
-            click to explore &rarr;
+        <BackgroundGradient className="rounded-[22px] max-w-sm  sm:w-auto flex flex-col  p-4 sm:p-10 bg-white dark:bg-zinc-900">
+        <div className="p-5 sm:p-5  rounded-full   pr-1 py-1 text-white flex items-center space-x-1 bg-black m-2 text-xl font-bold dark:bg-zinc-800">
+            Try now &rarr;
           </div>
           <div className="flex flex-col  ">
+          <p className=" font-bold sm:text-3xl text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
+                Explora
+              </p>
             <Image
               src="https://images.pexels.com/photos/2178175/pexels-photo-2178175.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="Explora"
               height="700"
               width="300"
-              className=""
+              className="rounded-sm"
             />
             <div>
-              <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
-                Explora
-              </p>
+              
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
                 Explora is an innovative web application designed to help users discover
                 and plan their perfect trips. Whether you&apos;re an avid traveler or
@@ -67,17 +68,27 @@ export function CardGradient() {
               </p>
             </div>
           </div>
+          <Link href="https://github.com/ParagGhatage/Explora">
           <div className="p-5 sm:p-5 w-38 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xl font-bold dark:bg-zinc-800">
-            <Link href="https://github.com/ParagGhatage/Explora">Source Code</Link>
+            Source Code
           </div>
+          </Link>
         </BackgroundGradient>
       </Link>
 
       <Link href="https://thunder-tube.vercel.app/" className="sm:mb-0">
         <BackgroundGradient className="rounded-[22px] max-w-sm w-full sm:w-auto flex flex-col justify-between p-4 sm:p-10 bg-white dark:bg-zinc-900">
-          <div className="p-4">
-            click to explore &rarr;
+          
+
+        <div className="p-5 sm:p-5  rounded-full   pr-1 py-1 text-white flex items-center space-x-1 bg-black m-2 text-xl font-bold dark:bg-zinc-800">
+            Try now &rarr;
           </div>
+          <div className="flex flex-col  ">
+          <p className=" font-bold sm:text-3xl text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
+                Thunder-Tube
+              </p>
+              </div>
+          
           <div className="flex flex-col ">
             <Image
               src="https://images.pexels.com/photos/2823936/pexels-photo-2823936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -87,9 +98,7 @@ export function CardGradient() {
               className=""
             />
             <div className="sm:mb-20">
-              <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
-                Thunder-Tube
-              </p>
+              
               <p className="text-sm text-neutral-600  dark:text-neutral-400 ">
                 Full stack YouTube clone with all its features. It uses ReactJS as a
                 frontend framework, MongoDB as a database, and Express and NodeJS for
