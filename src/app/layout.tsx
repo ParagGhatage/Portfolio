@@ -6,6 +6,7 @@ import {Navbar} from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
+import { ChakraProvider } from '@chakra-ui/react'
 
 export const metadata: Metadata = {
   title: "Parag Ghatage",
@@ -20,10 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <ChakraProvider>
       <Analytics/>
         <div>
         <Navbar/>
         </div>
+        </ChakraProvider>
         
         {children}
       </body>
