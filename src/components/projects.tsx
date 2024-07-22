@@ -9,21 +9,27 @@ export function ProjectText() {
   const words = [
     {
       text: "Let's",
+      className: "text-white",
     },
     {
       text: "have",
+      className: "text-white",
     },
     {
       text: "a",
+      className: "text-white",
     },
     {
       text: "look",
+      className: "text-white",
     },
     {
         text: "at",
+        className: "text-white",
       },
       {
         text: "some",
+        className: "text-white",
       },
     {
       text: "Projects",
@@ -32,7 +38,7 @@ export function ProjectText() {
   ];
   return (
     <div className="flex flex-col items-center justify-center h-[30rem]  mt-24 sm:mt-0 ">
-      <p className="text-neutral-600 dark:text-neutral-200 text-sm sm:text-base  ">
+      <p className="text-neutral-200  text-base sm:text-xl  ">
         Software changes how the world functions.
       </p>
       <TypewriterEffectSmooth  words={words} />
@@ -40,7 +46,7 @@ export function ProjectText() {
         
       </div>
         <Link href={"/projects"}>
-        <button  className=" bg-white hover:bg-blue-500 p-5 rounded-lg text-black text-2xl ">
+        <button  className=" bg-white  p-5 rounded-2xl text-black text-2xl ">
         Projects
         </button>
         </Link>

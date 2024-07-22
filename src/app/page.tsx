@@ -6,6 +6,7 @@ import {GeneralInfo} from "@/components/GeneralInfo"
 import { ProjectText} from "@/components/projects";
 import { AnimatedPin } from "@/components/ProjectCards";
 import { Footer } from "@/components/Footer";
+import { IconCloud1 } from "@/components/IconCloud";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div >
         <Intro/>
         <GeneralInfo/>
+        <IconCloud1 />
         <ProjectText/>
         <AnimatedPin/>
         <Footer/>
