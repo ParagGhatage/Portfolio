@@ -18,15 +18,9 @@ export function AnimatedPin() {
       </h3>
 
       <div className="p-3">
-      <div className="text-base font-normal mb-4">
-        <span className="text-slate-500">
-        Explora is an innovative web application designed to help users discover and plan their perfect trips.
-        </span>
-      </div>
-      
       <div className="video-container">
       <video 
-        src="/explora1.mp4" 
+        src="/explora2.mp4" 
         autoPlay 
         loop 
         muted 
@@ -34,6 +28,14 @@ export function AnimatedPin() {
         className="video"
       />
     </div>
+
+      <div className="text-base font-normal mb-4">
+        <span className="text-slate-500">
+        Explora is an innovative web application designed to help users discover and plan their perfect trips.
+        </span>
+      </div>
+      
+      
       </div>
       
     </div>
@@ -48,12 +50,6 @@ export function AnimatedPin() {
         Thunder-Tube
       </h3>
       <div className="p-3">
-      <div className="text-base font-normal mb-4">
-        <span className="text-slate-500">
-          YouTube clone with all features.
-        </span>
-      </div>
-      
       <div className="video-container">
       <video 
         src="/thunder.mp4" 
@@ -64,6 +60,15 @@ export function AnimatedPin() {
         className="video"
       />
     </div>
+      <div className="text-base font-normal mb-4">
+        <span className="text-slate-500">
+        Full stack YouTube clone with all its features. It uses ReactJS as a
+                frontend framework, MongoDB as a database, and Express and NodeJS for
+                backend.
+        </span>
+      </div>
+      
+      
       </div>
       
     </div>

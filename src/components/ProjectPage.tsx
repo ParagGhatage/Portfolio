@@ -52,7 +52,7 @@ export function CardGradient() {
               </p>
               <div className="video-container">
       <video 
-        src="/explora1.mp4" 
+        src="/explora2.mp4" 
         autoPlay 
         loop 
         muted 
