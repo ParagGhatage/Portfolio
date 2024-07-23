@@ -24,13 +24,16 @@ export function AnimatedPin() {
         </span>
       </div>
       
-      <Image
-        src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=600"
-        alt="Explora"
-        height="1000"
-        width="400"
-        className="object-contain w-screen"
+      <div className="video-container">
+      <video 
+        src="/explora.mp4" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="video"
       />
+    </div>
       </div>
       
     </div>
