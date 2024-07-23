@@ -50,13 +50,16 @@ export function CardGradient() {
           <p className=" font-bold sm:text-3xl text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
                 Explora
               </p>
-            <Image
-              src="https://images.pexels.com/photos/2178175/pexels-photo-2178175.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Explora"
-              height="700"
-              width="300"
-              className="rounded-sm"
-            />
+              <div className="video-container">
+      <video 
+        src="/explora.mp4" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="video"
+      />
+    </div>
             <div>
               
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
@@ -90,13 +93,16 @@ export function CardGradient() {
               </div>
           
           <div className="flex flex-col ">
-            <Image
-              src="https://images.pexels.com/photos/2823936/pexels-photo-2823936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Thunder-Tube"
-              height="700"
-              width="400"
-              className=""
-            />
+          <div className="video-container">
+      <video 
+        src="/thunder.mp4" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="video"
+      />
+    </div>
             <div className="sm:mb-20">
               
               <p className="text-sm text-neutral-600  dark:text-neutral-400 ">
