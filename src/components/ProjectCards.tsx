@@ -26,7 +26,7 @@ export function AnimatedPin() {
       
       <div className="video-container">
       <video 
-        src="/explora.mp4" 
+        src="/explora1.mp4" 
         autoPlay 
         loop 
         muted 
@@ -54,13 +54,16 @@ export function AnimatedPin() {
         </span>
       </div>
       
-      <Image
-        src="https://images.pexels.com/photos/2823936/pexels-photo-2823936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        alt="Thunder-Tube"
-        height="100"
-        width="400"
-        className="object-contain w-full"
+      <div className="video-container">
+      <video 
+        src="/thunder.mp4" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="video"
       />
+    </div>
       </div>
       
     </div>
