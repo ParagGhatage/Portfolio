@@ -2,7 +2,7 @@ PARAG GHATAGE
 Full Stack Web Developer
 Location: India
 Contact:
-Email: thunderwolf.dev@gmail.com
+Email: thunderwolf.dev@gmail.com 
 Portfolio: https://paragghatage.com
 
 Summary
