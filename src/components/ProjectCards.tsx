@@ -8,8 +8,8 @@ export function AnimatedPin() {
   return (
     <div className="flex flex-col sm:flex-row mb-28 items-center sm:justify-center  mt-0 border-spacing-2 border-white w-screen h-auto sm:h-[30rem]">
   <PinContainer
-    title="https://www.explora.cyou"
-    href="https://www.explora.cyou"
+    title="https://explora.cyou"
+    href="https://explora.cyou"
     className="mb-4 sm:mb-0 sm:ml-4"
   >
     <div className="flex sm:flex-col p-4 tracking-tight text-slate-100/50 w-screen sm:w-[20rem] h-auto sm:h-[20rem]">
