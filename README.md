@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Parag Ghatage
 
-## Getting Started
+**Full Stack Web Developer**  
+**Location:** India  
+**Contact:**  
+Email: [thunderwolf.dev@gmail.com](mailto:thunderwolf.dev@gmail.com)  
+Portfolio: [https://paragghatage.com](https://paragghatage.com)  
 
-First, run the development server:
+## Summary
+I am Parag Ghatage, a full stack web developer specializing in Next.js. I developed Explora, a travel planning app that allows users to explore photos, check real-time weather, and plan trips with accommodation and travel options. It uses technologies like Next.js, TypeScript, Tailwind CSS, MongoDB, and various APIs. I also created Thunder-Tube, a YouTube clone with features like subscriptions, likes, playlists, and secure login with JWT. Currently, I am pursuing a B.Tech in Information Technology at Dr. D. Y. Patil Institute of Technology in Pune, India.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Projects
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### [Explora - Travel Planner and Explorer](https://www.explora.cyou)
+**Date Period:** *Provide Date Period*  
+**Location:** *Provide Location*  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Technologies Used:**  
+- Next.js
+- TypeScript
+- Tailwind CSS
+- MongoDB
+- Auth.js
+- Resend
+- Google Gemini API
+- OpenWeather API
+- Ola Maps API
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Project Description:**  
+Built a travel planning web app enabling users to explore photos, access real-time weather, plan trips with accommodation and travel options, and use interactive maps with live data.
 
-## Learn More
+**Key Features:**
+- **User Authentication:** Secure login with Google and Microsoft via AuthJS and MongoDB.
+- **Email Integration:** Send travel plans via email using Resend.
 
-To learn more about Next.js, take a look at the following resources:
+### [Thunder-Tube - YouTube Clone](https://thunder-tube.vercel.app/)
+**Date Period:** *Provide Date Period*  
+**Location:** *Provide Location*  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Technologies Used:**  
+- React
+- Node.js
+- Tailwind CSS
+- HTML
+- CSS
+- JavaScript
+- MongoDB
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Project Description:**  
+Developed a YouTube clone with all essential features such as subscriptions, likes, playlists, comments, channel profiles, and secure login/registration using JWT.
 
-## Deploy on Vercel
+**Key Features:**
+- **User Authentication:** Secure login and registration with JWT.
+- **YouTube Features:** Supports subscriptions, likes, playlists, comments, and channel profiles.
+- **Data Processing:** Utilized MongoDB aggregation pipelines for advanced queries.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Education
+**B. Tech in Information Technology**  
+Dr. D. Y. Patil Institute of Technology  
+**Duration:** 01/2022 - 01/2026  
+**Location:** Pune, India  
+**CGPA:** 8
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Skills
+- API
+- CSS
+- Git
+- GitHub
+- HTML
+- Java
+- JavaScript
+- Auth.js
+- MongoDB
+- Next.js
+- Node
+- Node.js
+- Python
+- Tailwind CSS
+- React.js
+- TypeScript
+
+## Find Me Online
+- **Portfolio:** [https://paragghatage.com](https://paragghatage.com)
+- **LinkedIn:** [https://www.linkedin.com/in/paragghatage-09685a314/](https://www.linkedin.com/in/paragghatage-09685a314/)
+- **GitHub:** [https://github.com/ParagGhatage](https://github.com/ParagGhatage)
+- **X (Twitter):** [https://x.com/PARAG_GHATAGE](https://x.com/PARAG_GHATAGE)
+- **Instagram:** [https://www.instagram.com/parag_ghatage_35/](https://www.instagram.com/parag_ghatage_35/)
+
+Feel free to explore my projects and reach out to me through any of the above platforms.
