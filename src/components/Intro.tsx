@@ -18,7 +18,7 @@ export function Intro() {
         </h2>
         <p className="text-white  text-3xl sm:text-4xl max-w-xl mt-6 text-center text">
           
-          A dedicated Full Stack Web Developer specializing in Next.js and React.js.
+          A dedicated Full Stack Developer specializing in Next.js and React.js.
         </p>
         
       </Vortex>
