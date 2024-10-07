@@ -23,6 +23,9 @@ export function Navbar({ className }: { className?: string }) {
         
         <Link href={"/projects"}>
         <MenuItem setActive={setActive} active={active} item="Projects">
+        <div className="flex flex-col space-y-4 text-sm p-4">
+            <HoveredLink href="https://neuro-cure-frontend.vercel.app/">NeuroCure</HoveredLink>
+          </div>
           <div className="flex flex-col space-y-4 text-sm p-4">
             <HoveredLink href="https://thunder-tube.vercel.app/">Thunder-Tube</HoveredLink>
           </div>

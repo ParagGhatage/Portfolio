@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import { BackgroundGradient } from "./ui/background-gradient";
-import { IconAppWindow } from "@tabler/icons-react";
-import Image from "next/image";
 import { SparklesCore } from "./ui/sparkles";
 import Link from "next/link";
 
@@ -26,12 +24,12 @@ export function Sparkles() {
           maxSize={2}
           speed={1}
           particleDensity={1200}
-          className="w-full "
+          className="w-full"
           particleColor="E633FF"
         />
 
         {/* Radial Gradient to prevent sharp edges */}
-        <div className="absolute inset-0 w-full  bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+        <div className="absolute inset-0 w-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
     </div>
   );
@@ -39,29 +37,28 @@ export function Sparkles() {
 
 export function CardGradient() {
   return (
-    <div className="flex flex-col  sm:flex-row justify-around items-center sm:items-start ">
-      
-      <Link href="https://explora.cyou" className="sm:mb-0">
-        <BackgroundGradient className="rounded-[22px] max-w-sm  sm:w-auto flex flex-col  p-4 sm:p-10 bg-white dark:bg-zinc-900">
-        <div className="p-5 sm:p-5  rounded-full   pr-1 py-1 text-white flex items-center space-x-1 bg-black m-2 text-xl font-bold dark:bg-zinc-800">
+    <div className="flex flex-col sm:flex-row justify-around items-center sm:items-start">
+      {/* Explora Card */}
+      <Link href="https://explora.cyou" className="sm:mb-0 p-4">
+        <BackgroundGradient className="rounded-[22px] max-w-sm sm:w-auto flex flex-col p-4 sm:p-10 bg-white dark:bg-zinc-900">
+          <div className="p-5 sm:p-5 rounded-full pr-1 py-1 text-white flex items-center space-x-1 bg-black m-2 text-xl font-bold dark:bg-zinc-800">
             Try now &rarr;
           </div>
-          <div className="flex flex-col  ">
-          <p className=" font-bold sm:text-3xl text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
-                Explora
-              </p>
-              <div className="video-container">
-      <video 
-        src="/explora2.mp4" 
-        autoPlay 
-        loop 
-        muted 
-        playsInline 
-        className="video"
-      />
-    </div>
+          <div className="flex flex-col">
+            <p className="font-bold sm:text-3xl text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
+              Explora
+            </p>
+            <div className="video-container">
+              <video
+                src="/explora2.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="video"
+              />
+            </div>
             <div>
-              
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
                 Explora is an innovative web application designed to help users discover
                 and plan their perfect trips. Whether you&apos;re an avid traveler or
@@ -71,41 +68,73 @@ export function CardGradient() {
               </p>
             </div>
           </div>
-          <Link href="https://github.com/ParagGhatage/Explora">
-          <div className="p-5 sm:p-5 w-38 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xl font-bold dark:bg-zinc-800">
-            Source Code
-          </div>
+          <Link href="https://github.com/ParagGhatage/Explora" className="p-4">
+            <div className="p-5 sm:p-5 w-38 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xl font-bold dark:bg-zinc-800">
+              Source Code
+            </div>
           </Link>
         </BackgroundGradient>
       </Link>
 
-      <Link href="https://thunder-tube.vercel.app/" className="sm:mb-0">
-        <BackgroundGradient className="rounded-[22px] max-w-sm w-full sm:w-auto flex flex-col justify-between p-4 sm:p-10 bg-white dark:bg-zinc-900">
-          
-
-        <div className="p-5 sm:p-5  rounded-full   pr-1 py-1 text-white flex items-center space-x-1 bg-black m-2 text-xl font-bold dark:bg-zinc-800">
+      {/* NeuroCure Card */}
+      <Link href="https://neuro-cure-frontend.vercel.app" className="sm:mb-0 p-4">
+        <BackgroundGradient className="rounded-[22px] max-w-sm sm:w-auto flex flex-col p-4 sm:p-10 bg-white dark:bg-zinc-900">
+          <div className="p-5 sm:p-5 rounded-full pr-1 py-1 text-white flex items-center space-x-1 bg-black m-2 text-xl font-bold dark:bg-zinc-800">
             Try now &rarr;
           </div>
-          <div className="flex flex-col  ">
-          <p className=" font-bold sm:text-3xl text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
-                Thunder-Tube
+          <div className="flex flex-col">
+            <p className="font-bold sm:text-3xl text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
+              NeuroCure
+            </p>
+            <div className="video-container">
+              <video
+                src="/neuro-cure.mp4" // Update with the actual video file
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="video"
+              />
+            </div>
+            <div>
+              <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                NeuroCure is a cutting-edge application designed to accurately detect and classify brain tumors using advanced deep learning techniques. 
+                Our platform aims to provide reliable and efficient solutions for medical professionals in the field of neuroimaging.
               </p>
-              </div>
-          
-          <div className="flex flex-col ">
-          <div className="video-container">
-      <video 
-        src="/thunder.mp4" 
-        autoPlay 
-        loop 
-        muted 
-        playsInline 
-        className="video"
-      />
-    </div>
+            </div>
+          </div>
+          <Link href="https://github.com/ParagGhatage/NeuroCure">
+            <div className="p-5 sm:p-5 w-38 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xl font-bold dark:bg-zinc-800">
+              Source Code
+            </div>
+          </Link>
+        </BackgroundGradient>
+      </Link>
+
+      {/* Thunder-Tube Card */}
+      <Link href="https://thunder-tube.vercel.app/" className="sm:mb-0 p-4">
+        <BackgroundGradient className="rounded-[22px] max-w-sm sm:w-auto flex flex-col justify-between p-4 sm:p-10 bg-white dark:bg-zinc-900">
+          <div className="p-5 sm:p-5 rounded-full pr-1 py-1 text-white flex items-center space-x-1 bg-black m-2 text-xl font-bold dark:bg-zinc-800">
+            Try now &rarr;
+          </div>
+          <div className="flex flex-col">
+            <p className="font-bold sm:text-3xl text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
+              Thunder-Tube
+            </p>
+          </div>
+          <div className="flex flex-col">
+            <div className="video-container">
+              <video
+                src="/thunder.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="video"
+              />
+            </div>
             <div className="sm:mb-20">
-              
-              <p className="text-sm text-neutral-600  dark:text-neutral-400 ">
+              <p className="text-sm text-neutral-600 dark:text-neutral-400">
                 Full stack YouTube clone with all its features. It uses ReactJS as a
                 frontend framework, MongoDB as a database, and Express and NodeJS for
                 backend.
@@ -117,7 +146,6 @@ export function CardGradient() {
           </div>
         </BackgroundGradient>
       </Link>
-
     </div>
   );
 }
