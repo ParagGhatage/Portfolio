@@ -40,7 +40,7 @@ export function ProjectText() {
   return (
     <div className="flex flex-col items-center justify-center h-[30rem]  mt-24 sm:mt-0 ">
       <p className="text-neutral-200  text-base sm:text-xl  ">
-        Software changes how the world functions.
+      AI is at the forefront of reshaping decision-making and driving innovation.
       </p>
       <TypewriterEffectSmooth  words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">

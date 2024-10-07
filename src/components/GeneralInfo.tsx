@@ -15,8 +15,9 @@ export function GeneralInfo() {
         revealText="Coding the future"
       >
         <TextRevealCardTitle className="font-mono">
-        Web development is about constantly learning and evolving, embracing challenges as opportunities to innovate
-         and create meaningful experiences on the digital frontier.
+        Machine learning is a field of continuous growth and evolution, where challenges are embraced as opportunities for innovation. I strive to create impactful solutions that push the boundaries of technology and enhance the power of artificial intelligence.
+
+
         </TextRevealCardTitle>
         <TextRevealCardDescription>
           .
