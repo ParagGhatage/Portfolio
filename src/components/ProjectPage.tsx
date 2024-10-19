@@ -4,6 +4,83 @@ import { BackgroundGradient } from "./ui/background-gradient";
 import { SparklesCore } from "./ui/sparkles";
 import Link from "next/link";
 
+interface Project {
+  name: string;
+  description: string;
+  videoSrc: string;
+  projectLink: string;
+  githubLink: string;
+}
+
+const projects: Project[] = [
+  
+  {
+    name: "NeuroCure",
+    description: "NeuroCure is a cutting-edge application designed to accurately detect and classify brain tumors using advanced deep learning techniques. Our platform aims to provide reliable and efficient solutions for medical professionals in the field of neuroimaging.",
+    videoSrc: "/neuro-cure.mp4",
+    projectLink: "https://neuro-cure-frontend.vercel.app",
+    githubLink: "https://github.com/ParagGhatage/NeuroCure",
+  },
+  {
+    name: "Briefly",
+    description: "Briefly is an NLP-powered chatbot trained on Indian law documents, providing reliable answers to legal queries. Designed to assist users in navigating complex legal information effortlessly.",
+    videoSrc: "/Briefly_post.mp4", // Add the video source for Briefly
+    projectLink: "https://briefly-law.vercel.app", // Update with the actual project link
+    githubLink: "https://github.com/ThunderTechVentures/Briefly", // Update with the actual GitHub link
+  },
+  {
+    name: "Explora",
+    description: "Explora is an innovative web application designed to help users discover and plan their perfect trips. Whether you're an avid traveler or someone looking to explore new destinations, our platform offers comprehensive tools and features to enhance your travel planning experience.",
+    videoSrc: "/explora2.mp4",
+    projectLink: "https://explora.cyou",
+    githubLink: "https://github.com/ParagGhatage/Explora",
+  },
+  {
+    name: "Thunder-Tube",
+    description: "Full stack YouTube clone with all its features. It uses ReactJS as a frontend framework, MongoDB as a database, and Express and NodeJS for backend.",
+    videoSrc: "/thunder.mp4",
+    projectLink: "https://thunder-tube.vercel.app/",
+    githubLink: "https://github.com/ParagGhatage/Thunder-Tube",
+  },
+  
+];
+
+// Define the ProjectCard component with props
+const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
+  return (
+    <Link href={project.projectLink} className="p-4">
+      <BackgroundGradient className="rounded-[22px] max-w-sm flex flex-col p-4 sm:p-10 bg-white dark:bg-zinc-900 shadow-md transition-transform transform hover:scale-105">
+        <div className="p-5 rounded-full text-white flex items-center space-x-1 bg-black m-2 text-xl font-bold dark:bg-zinc-800">
+          Try now &rarr;
+        </div>
+        <div className="flex flex-col">
+          <p className="font-bold sm:text-3xl text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
+            {project.name}
+          </p>
+          <div className="video-container">
+            <video
+              src={project.videoSrc}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="video"
+            />
+          </div>
+          <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-2">
+            {project.description}
+          </p>
+        </div>
+        <Link href={project.githubLink}>
+          <div className="p-5 w-38 rounded-full text-white flex items-center space-x-1 bg-black mt-4 text-xl font-bold dark:bg-zinc-800">
+            Source Code
+          </div>
+        </Link>
+      </BackgroundGradient>
+    </Link>
+  );
+};
+
 export function Sparkles() {
   return (
     <div className="h-[10rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md mt-20">
@@ -37,115 +114,10 @@ export function Sparkles() {
 
 export function CardGradient() {
   return (
-    <div className="flex flex-col sm:flex-row justify-around items-center sm:items-start">
-      {/* Explora Card */}
-      <Link href="https://explora.cyou" className="sm:mb-0 p-4">
-        <BackgroundGradient className="rounded-[22px] max-w-sm sm:w-auto flex flex-col p-4 sm:p-10 bg-white dark:bg-zinc-900">
-          <div className="p-5 sm:p-5 rounded-full pr-1 py-1 text-white flex items-center space-x-1 bg-black m-2 text-xl font-bold dark:bg-zinc-800">
-            Try now &rarr;
-          </div>
-          <div className="flex flex-col">
-            <p className="font-bold sm:text-3xl text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
-              Explora
-            </p>
-            <div className="video-container">
-              <video
-                src="/explora2.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="video"
-              />
-            </div>
-            <div>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                Explora is an innovative web application designed to help users discover
-                and plan their perfect trips. Whether you&apos;re an avid traveler or
-                someone looking to explore new destinations, our platform offers
-                comprehensive tools and features to enhance your travel planning
-                experience.
-              </p>
-            </div>
-          </div>
-          <Link href="https://github.com/ParagGhatage/Explora" className="p-4">
-            <div className="p-5 sm:p-5 w-38 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xl font-bold dark:bg-zinc-800">
-              Source Code
-            </div>
-          </Link>
-        </BackgroundGradient>
-      </Link>
-
-      {/* NeuroCure Card */}
-      <Link href="https://neuro-cure-frontend.vercel.app" className="sm:mb-0 p-4">
-        <BackgroundGradient className="rounded-[22px] max-w-sm sm:w-auto flex flex-col p-4 sm:p-10 bg-white dark:bg-zinc-900">
-          <div className="p-5 sm:p-5 rounded-full pr-1 py-1 text-white flex items-center space-x-1 bg-black m-2 text-xl font-bold dark:bg-zinc-800">
-            Try now &rarr;
-          </div>
-          <div className="flex flex-col">
-            <p className="font-bold sm:text-3xl text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
-              NeuroCure
-            </p>
-            <div className="video-container">
-              <video
-                src="/neuro-cure.mp4" // Update with the actual video file
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="video"
-              />
-            </div>
-            <div>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                NeuroCure is a cutting-edge application designed to accurately detect and classify brain tumors using advanced deep learning techniques. 
-                Our platform aims to provide reliable and efficient solutions for medical professionals in the field of neuroimaging.
-              </p>
-            </div>
-          </div>
-          <Link href="https://github.com/ParagGhatage/NeuroCure">
-            <div className="p-5 sm:p-5 w-38 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xl font-bold dark:bg-zinc-800">
-              Source Code
-            </div>
-          </Link>
-        </BackgroundGradient>
-      </Link>
-
-      {/* Thunder-Tube Card */}
-      <Link href="https://thunder-tube.vercel.app/" className="sm:mb-0 p-4">
-        <BackgroundGradient className="rounded-[22px] max-w-sm sm:w-auto flex flex-col justify-between p-4 sm:p-10 bg-white dark:bg-zinc-900">
-          <div className="p-5 sm:p-5 rounded-full pr-1 py-1 text-white flex items-center space-x-1 bg-black m-2 text-xl font-bold dark:bg-zinc-800">
-            Try now &rarr;
-          </div>
-          <div className="flex flex-col">
-            <p className="font-bold sm:text-3xl text-2xl text-black mt-4 mb-2 dark:text-neutral-200">
-              Thunder-Tube
-            </p>
-          </div>
-          <div className="flex flex-col">
-            <div className="video-container">
-              <video
-                src="/thunder.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="video"
-              />
-            </div>
-            <div className="sm:mb-20">
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                Full stack YouTube clone with all its features. It uses ReactJS as a
-                frontend framework, MongoDB as a database, and Express and NodeJS for
-                backend.
-              </p>
-            </div>
-          </div>
-          <div className="p-5 sm:p-5 w-38 rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xl font-bold dark:bg-zinc-800">
-            <Link href="https://github.com/ParagGhatage/Thunder-Tube">Source Code</Link>
-          </div>
-        </BackgroundGradient>
-      </Link>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+      {projects.map((project) => (
+        <ProjectCard key={project.name} project={project} />
+      ))}
     </div>
   );
 }

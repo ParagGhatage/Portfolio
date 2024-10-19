@@ -27,11 +27,15 @@ export function Navbar({ className }: { className?: string }) {
             <HoveredLink href="https://neuro-cure-frontend.vercel.app/">NeuroCure</HoveredLink>
           </div>
           <div className="flex flex-col space-y-4 text-sm p-4">
-            <HoveredLink href="https://thunder-tube.vercel.app/">Thunder-Tube</HoveredLink>
+            <HoveredLink href="https://briefly-law.vercel.app/">Briefly</HoveredLink>
           </div>
           <div className="flex flex-col space-y-4 text-sm p-4">
             <HoveredLink href="https://www.explora.cyou">Explora</HoveredLink>
           </div>
+          <div className="flex flex-col space-y-4 text-sm p-4">
+            <HoveredLink href="https://thunder-tube.vercel.app/">Thunder-Tube</HoveredLink>
+          </div>
+          
         </MenuItem>
         </Link>
 
