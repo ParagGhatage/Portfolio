@@ -22,6 +22,13 @@ const projects: Project[] = [
     githubLink: "https://github.com/ParagGhatage/NeuroCure",
   },
   {
+    name: "Artify",
+    description: "Artify is a cutting-edge neural style transfer application that transforms ordinary images into stunning works of art using deep learning techniques. Leveraging the power of convolutional neural networks, Artify allows users to blend the content of one image with the artistic style of another, creating unique and visually captivating outputs.",
+    videoSrc: "/Artify_post.mp4",
+    projectLink: "https://artify-art-three.vercel.app",
+    githubLink: "https://github.com/ParagGhatage/Artify",
+  },
+  {
     name: "Briefly",
     description: "Briefly is an NLP-powered chatbot trained on Indian law documents, providing reliable answers to legal queries. Designed to assist users in navigating complex legal information effortlessly.",
     videoSrc: "/Briefly_post.mp4", // Add the video source for Briefly
