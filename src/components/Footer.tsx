@@ -27,7 +27,7 @@ export const Footer = () => {
        
        <div className="flex justify-evenly mt-2">
        <div>
-        <Link href="mailto:thunderwolf.dev@gmail.com">
+        <Link href="mailto:parag.dev2025@gmail.com">
         <IconBrandGmail/>
         </Link>
         </div>

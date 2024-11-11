@@ -104,7 +104,7 @@ export function ContactMe() {
         <div className="text-center m-4 text-2xl ">
             Socials
         </div>
-        <Link href="mailto:thunderwolf.dev@gmail.com?subject=Get%20in%20Touch&body=Hello%20there">
+        <Link href="mailto:parag.dev2025@gmail.com?subject=Get%20in%20Touch&body=Hello%20there">
           <div
             className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
           > 
