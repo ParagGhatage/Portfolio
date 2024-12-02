@@ -38,7 +38,7 @@ export const Footer = () => {
         </Link>
         </div>
         <div>
-        <Link href="https://leetcode.com/u/phghatage1/">
+        <Link href="https://leetcode.com/u/ParagGhatage/">
         <IconBrandLeetcode/>
         </Link>
         </div>

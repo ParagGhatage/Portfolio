@@ -111,6 +111,17 @@ export function ContactMe() {
             <BottomGradient />
           </div>
           </Link>
+          <Link href="https://www.linkedin.com/in/parag-ghatage-7601b825a/">
+          <div
+            className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+          > 
+            <IconBrandLinkedin className="h-4  text-neutral-800 dark:text-neutral-300" /> 
+            <span className="text-neutral-700 dark:text-neutral-300 text-sm text-center">
+              LinkedIn
+            </span>
+            <BottomGradient />
+          </div>
+          </Link>
 
         <Link href="https://github.com/ParagGhatage">
           <div
@@ -148,17 +159,7 @@ export function ContactMe() {
           </div>
           </Link>
 
-          <Link href="https://www.linkedin.com/in/parag-ghatage-7601b825a/">
-          <div
-            className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-          > 
-            <IconBrandLinkedin className="h-4  text-neutral-800 dark:text-neutral-300" /> 
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm text-center">
-              LinkedIn
-            </span>
-            <BottomGradient />
-          </div>
-          </Link>
+         
         </div>
         
 

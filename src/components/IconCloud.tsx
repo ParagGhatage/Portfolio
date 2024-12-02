@@ -1,6 +1,18 @@
 import IconCloud from "@/components/magicui/icon-cloud";
 
 const slugs = [
+  "googlecloud",
+  "microsoftazure",
+  "tensorflow",
+  "pytorch",
+  "keras",
+  "scikit-learn",
+  "pandas",
+  "numpy",
+  "matplotlib",
+  "plotly",
+  "opencv",
+  "kubernetes",
   "typescript",
   "javascript",
   "java",
@@ -14,7 +26,6 @@ const slugs = [
   "amazonaws",
   "firebase",
   "vercel",
-  "resend",
   "docker",
   "tailwindcss",
   "mongodb",
@@ -25,6 +36,7 @@ const slugs = [
   "visualstudiocode",
  "nextjs",
   "figma",
+  
 ];
 
 export function IconCloud1() {

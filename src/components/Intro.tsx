@@ -13,7 +13,7 @@ export function Intro() {
     baseHue={120}
     className="flex items-center justify-center px-2 md:px-10 py-4 w-full h-full"
   >
-    <div className="flex flex-col md:flex-row items-center justify-center">
+    <div className="flex flex-col backdrop-blur-md rounded-sm p-2 md:flex-row items-center justify-center">
       <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
         <div className="hexagon">
           <img
@@ -25,10 +25,10 @@ export function Intro() {
       </div>
 
       <div className="text-center md:text-left">
-        <h2 className="text-white text-4xl sm:text-6xl font-bold">
+        <h2 className="text-white text-4xl sm:text-5xl font-bold">
           Hi, I&apos;m Parag
         </h2>
-        <p className="text-white text-3xl sm:text-4xl max-w-xl mt-6">
+        <p className="text-white text-2xl sm:text-3xl max-w-xl mt-6">
           A passionate Machine Learning enthusiast driven by the power of AI to create innovative solutions.
         </p>
       </div>

@@ -10,7 +10,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 
 export const metadata: Metadata = {
   title: "Parag Ghatage",
-  description: "Parag Ghatage's portifolio",
+  description: "Parag Ghatage's portfolio",
 };
 
 export default function RootLayout({
