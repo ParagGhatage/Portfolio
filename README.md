@@ -3,7 +3,7 @@
 **Full Stack Web Developer**  
 **Location:** India  
 **Contact:**  
-Email: [thunderwolf.dev@gmail.com](mailto:thunderwolf.dev@gmail.com)  
+Email: [parag.dev2025@gmail.com.com](mailto:parag.dev2025@gmail.com)  
 Portfolio: [https://paragghatage.com](https://paragghatage.com)  
 
 ## Summary

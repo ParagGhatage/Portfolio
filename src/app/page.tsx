@@ -1,6 +1,5 @@
 'use client'
 
-import Image from "next/image";
 import { Intro } from "@/components/Intro";
 import {GeneralInfo} from "@/components/GeneralInfo"
 import { ProjectText} from "@/components/projects";

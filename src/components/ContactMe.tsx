@@ -5,7 +5,6 @@ import { Input } from "./ui/input";
 import { cn } from "@/utils/cn";
 import {
   IconBrandGithub,
-  IconBrandGoogle,
   IconBrandX,
   IconBrandGmail,
   IconBrandInstagram,
