@@ -90,8 +90,8 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
 
 export function Sparkles() {
   return (
-    <div className="h-[10rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md mt-20">
-      <h1 className="text-4xl md:text-5xl lg:text-9xl font-bold text-center text-white relative z-20">
+    <div className="h-[10rem] w-full bg-black flex flex-col items-center justify-center pt-0 rounded-md sm:mt-20">
+      <h1 className="text-6xl md:text-5xl lg:text-9xl font-bold text-center text-white relative z-20">
         Projects
       </h1>
       <div className="w-full md:w-[40rem] h-40 relative">
