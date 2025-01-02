@@ -40,33 +40,36 @@ export function Intro() {
             </h2>
             <p className="text-white sm:text-4xl max-w-xl mt-6">
               <div className="flex justify-center md:justify-start mt-6 gap-4">
-                <Link href="mailto:parag.dev2025@gmail.com">
-                  <IconBrandGmail
-                    className="text-red-500 hover:text-red-700 transition duration-300"
-                    size={40}
-                  />
-                </Link>
+                
                 <Link href="https://github.com/ParagGhatage">
                   <IconBrandGithub
                     className="text-black hover:text-gray-800 transition duration-300 bg-white rounded-full p-1"
                     size={40}
                   />
                 </Link>
+
+                <Link href="mailto:parag.dev2025@gmail.com">
+                  <IconBrandGmail
+                    className="text-red-500 bg-black border border-gray-700 rounded-md hover:text-red-700 transition duration-300"
+                    size={40}
+                  />
+                </Link>
+
                 <Link href="https://x.com/PARAG_GHATAGE">
                   <IconBrandX
-                    className="text-blue-500 hover:text-blue-700 transition duration-300"
+                    className="text-gray-800 hover:text-gray-950 bg-white rounded-md transition duration-300"
                     size={40}
                   />
                 </Link>
                 <Link href="https://leetcode.com/u/ParagGhatage/">
                   <IconBrandLeetcode
-                    className="text-orange-500 hover:text-orange-700 transition duration-300"
+                    className="text-orange-500 bg-black border border-gray-700 rounded-md hover:text-orange-700 transition duration-300"
                     size={40}
                   />
                 </Link>
                 <Link href="https://www.linkedin.com/in/parag-ghatage-09685a314/">
                   <IconBrandLinkedin
-                    className="text-blue-600 hover:text-blue-800 transition duration-300"
+                    className="text-blue-600 hover:text-blue-800 bg-white rounded-md transition duration-300"
                     size={40}
                   />
                 </Link>
