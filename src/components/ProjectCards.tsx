@@ -1,6 +1,7 @@
 'use client';
 
 import React from "react";
+import { motion } from "framer-motion";
 
 interface ProjectCardProps {
   title: string;
@@ -11,78 +12,71 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, videoSrc, description, link }) => {
   return (
-    <div className="border border-gray-300 rounded-lg shadow-lg p-4 bg-gray-800 text-slate-100">
-      <h3 className="font-bold text-lg mb-2">{title}</h3>
-      <div className="video-container mb-3">
-        <video 
-          src={videoSrc} 
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
-          className="w-full h-auto rounded"
-        />
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.4 }}
+      className="relative bg-gradient-to-r from-purple-500 to-pink-500 p-1 rounded-xl shadow-2xl"
+    >
+      <div className="bg-gray-900 bg-opacity-90 backdrop-blur-sm rounded-xl p-6 flex flex-col h-full">
+        <h3 className="text-2xl font-bold text-white mb-3">{title}</h3>
+        <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+          <video
+            src={videoSrc}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <p className="flex-1 text-gray-300 mb-4">{description}</p>
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="self-start px-4 py-2 bg-white text-gray-900 font-semibold rounded hover:bg-gray-200 transition"
+        >
+          Visit {title}
+        </a>
       </div>
-      <p className="text-base font-normal text-slate-500 mb-4">
-        {description}
-      </p>
-      <a 
-        href={link} 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className="text-blue-400 hover:underline"
-      >
-        Visit {title}
-      </a>
-    </div>
+    </motion.div>
   );
 };
 
 export function AnimatedPin() {
   return (
-    <div className="mb-28 w-screen h-auto sm:h-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        
-        {/* NeuroCure Card */}
+    <div className="min-h-screen bg-gradient-to-br from-gray-800 to-black py-12 px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         <ProjectCard
           title="NeuroCure"
           videoSrc="/neuro-cure.mp4"
-          description="NeuroCure is a cutting-edge software designed to accurately detect and classify brain tumors using advanced deep learning techniques."
+          description="NeuroCure leverages advanced deep learning techniques to detect and classify brain tumors with precision."
           link="https://neuro-cure-frontend.vercel.app"
         />
-
-        {/* Artify Card */}
         <ProjectCard
           title="Artify"
-          videoSrc="/Artify_post.mp4" // Add the actual video file for Briefly
-          description="Artify is a cutting-edge neural style transfer application that transforms ordinary images into stunning works of art using deep learning techniques. Leveraging the power of convolutional neural networks, Artify allows users to blend the content of one image with the artistic style of another, creating unique and visually captivating outputs."
+          videoSrc="/Artify_post.mp4"
+          description="Artify transforms your images into stunning artworks using the magic of neural style transfer."
           link="https://artify-art-three.vercel.app"
         />
-
-        {/* Briefly Card */}
         <ProjectCard
           title="Briefly"
-          videoSrc="/Briefly_post.mp4" // Add the actual video file for Briefly
-          description="Briefly is an NLP-powered chatbot trained on Indian law documents, providing reliable answers to legal queries. Designed to assist users in navigating complex legal information effortlessly."
+          videoSrc="/Briefly_post.mp4"
+          description="Briefly is your go-to NLP chatbot for navigating Indian law documents effortlessly."
           link="https://briefly-law.vercel.app"
         />
-
-        {/* Explora Card */}
         <ProjectCard
           title="Explora"
           videoSrc="/explora2.mp4"
-          description="Explora is an innovative web application designed to help users discover and plan their perfect trips."
+          description="Explora helps you uncover and plan your perfect trips with innovative travel solutions."
           link="https://explora.cyou"
         />
-
-        {/* Thunder-Tube Card */}
         <ProjectCard
           title="Thunder-Tube"
           videoSrc="/thunder.mp4"
-          description="Full stack YouTube clone with all its features. It uses ReactJS as a frontend framework, MongoDB as a database, and Express and NodeJS for backend."
+          description="Thunder-Tube is a full stack YouTube clone built with modern tech like React, MongoDB, Express, and NodeJS."
           link="https://thunder-tube.vercel.app/"
         />
-        
       </div>
     </div>
   );
