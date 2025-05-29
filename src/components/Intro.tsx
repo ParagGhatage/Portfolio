@@ -67,7 +67,7 @@ export function Intro() {
                     size={40}
                   />
                 </Link>
-                <Link href="https://www.linkedin.com/in/parag-ghatage-09685a314/">
+                <Link href="https://www.linkedin.com/in/paragg1/">
                   <IconBrandLinkedin
                     className="text-blue-600 hover:text-blue-800 bg-white rounded-md transition duration-300"
                     size={40}
